@@ -64,6 +64,7 @@
 		CB78C3DB24444187005E2BD7 /* BouncingBall */ = {
 			isa = PBXGroup;
 			children = (
+				CB78C3F924444A64005E2BD7 /* BouncingBallView */,
 				CB78C3DC24444187005E2BD7 /* AppDelegate.h */,
 				CB78C3DD24444187005E2BD7 /* AppDelegate.m */,
 				CB78C3DF24444187005E2BD7 /* SceneDelegate.h */,
@@ -75,10 +76,17 @@
 				CB78C3EA24444189005E2BD7 /* LaunchScreen.storyboard */,
 				CB78C3ED24444189005E2BD7 /* Info.plist */,
 				CB78C3EE24444189005E2BD7 /* main.m */,
+			);
+			path = BouncingBall;
+			sourceTree = "<group>";
+		};
+		CB78C3F924444A64005E2BD7 /* BouncingBallView */ = {
+			isa = PBXGroup;
+			children = (
 				CB78C3F5244441BC005E2BD7 /* BouncingBallView.h */,
 				CB78C3F6244441BC005E2BD7 /* BouncingBallView.m */,
 			);
-			path = BouncingBall;
+			path = BouncingBallView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
