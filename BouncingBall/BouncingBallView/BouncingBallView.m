@@ -41,7 +41,14 @@
     
     //碰撞
     _collisionBehavior = [[UICollisionBehavior alloc] init];
+    /*
+     UICollisionBehaviorModeItems     ：气泡间碰撞，无边界碰撞
+     UICollisionBehaviorModeBoundaries：气泡间无相互碰撞，气泡与边界碰撞
+     UICollisionBehaviorModeEverything：气泡间和边界都相互碰撞
+     */
     _collisionBehavior.collisionMode = UICollisionBehaviorModeBoundaries;
+    
+    /*translatesReferenceBoundsIntoBoundary=YES，保证气泡不会消失*/
     _collisionBehavior.translatesReferenceBoundsIntoBoundary = YES;
     _collisionBehavior.collisionDelegate = self;
 
@@ -130,7 +137,7 @@
     // 旋转
     dynamicItemBehavior.allowsRotation = NO;
     // 弹力系数
-    dynamicItemBehavior.elasticity = 0;
+    dynamicItemBehavior.elasticity = 1;
     // 线速度阻尼
     dynamicItemBehavior.resistance = 0;
     // 角速度阻尼
